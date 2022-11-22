@@ -1,0 +1,70 @@
+<!-- - Mehmet Ali Lislas - Emrullah Kaynar - Sefa Palabıyık - 241. Grup Görsel Programlama Proje-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mehmet Ali Lislas - Sefa Palabıyık - Emrullah Kaynar" />
+    <title>241.Grup Görsel Programlama Proje</title>
+    <meta
+      name="description"
+      content="241.Grup Görsel Programlama Proje"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.ico"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preload" href="./assets/images/icon-check.svg" as="image" type="image/svg+xml" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="card">
+      <h1>241. Grup Todo List</h1>
+      <button id="theme-switcher">
+        <img src="./assets/images/icon-sun.svg"  />
+      </button>
+    </header>
+    <main>
+      <div class="card add">
+        <div class="cb-container">
+          <button id="add-btn">+</button>
+        </div>
+        <div class="txt-container">
+          <label for="addt">Todo Oluştur</label>
+          <input
+            type="text"
+            class="txt-input"
+            placeholder="Görevi Buraya Yaz!"
+            spellcheck="false"
+            autocomplete="off"
+            id="addt"
+          />
+        </div>
+      </div>
+      <ul class="todos"></ul>
+      <div class="card stat">
+        <p class="corner"><span id="items-left">0</span> Görevin kaldı!</p>
+        <div class="filter">
+          <button style="padding:10px;" id="all" class="on">Tümü</button>
+          <button style="padding:10px;" id="active">Aktif </button>
+          <button style="padding:10px;" id="completed">Tamamlananlar</button>
+        </div>
+        <div class="corner">
+          <button id="clear-completed">Tamamlananları Temizle</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Görevleri sürükleyerek sıralayabilirsin!</p>
+    </footer>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
