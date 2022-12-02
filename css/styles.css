@@ -116,7 +116,6 @@ header.card {
 
 header.card h1 {
   color: var(--clr-white);
-  letter-spacing: 1.3rem;
   font-weight: 700;
   font-size: calc(var(--base-font) * 2);
 }
